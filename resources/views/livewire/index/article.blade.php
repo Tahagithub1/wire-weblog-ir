@@ -1,3 +1,1 @@
-<div>
-   <h2> {{ $article->h_title }} </h2>
-</div>
+<h2>wegji</h2>
