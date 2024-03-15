@@ -13,6 +13,7 @@
   </head>
 
   <body dir="rtl">
+    
 
    @livewire('Heeder')
  {{$slot}}

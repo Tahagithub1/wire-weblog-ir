@@ -10,9 +10,13 @@
           <span></span>
         </li>
         <li class="mx-3 cursor_pointer_text_shadow font_1_1">
-          درباره ما
+         <a href="/login"> ورود</a>
           <span></span>
         </li>
+        <li class="mx-3 cursor_pointer_text_shadow font_1_1">
+            درباره ما
+            <span></span>
+          </li>
         <li class="d-block d-md-none mx-4">
           <a href="/" class="fas fa-search fa-2x cursor_pointer_text_shadow "></a>
         </li>
