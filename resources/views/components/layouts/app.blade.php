@@ -15,7 +15,7 @@
   <body dir="rtl">
 
    @livewire('Heeder')
-   @livewire('index')
+ {{$slot}}
    @livewire('Footer')
 
 

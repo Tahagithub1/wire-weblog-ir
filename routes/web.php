@@ -1,7 +1,7 @@
 <?php
 
+use App\Livewire\Index\Index;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('livewire.layouts.app');
-});
+Route::get('/', Index::class);
+

@@ -7,11 +7,12 @@ use Livewire\Component;
 class Article extends Component
 {
 
-    public $Article;
+    public $article;
 
-    public function mount($Article){
-        $this->Article = $Article;
+    public function mount($article){
+        $this->article = $article;
     }
+
     public function render()
     {
         return view('livewire.index.article');

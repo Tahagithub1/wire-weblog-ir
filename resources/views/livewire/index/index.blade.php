@@ -36,12 +36,17 @@
         <hr class="bg-light w-25 h_0_5 m-0 rounded_5">
       </div>
 
-      @foreach ($best_article as $best)
+      {{-- @foreach ($best_article as $best)
       <livewire:index.article :article = "$best">
+      @endforeach --}}
+      @foreach ($best_article as $best)
+      {{-- <livewire:index.article :article = "$article"> --}}
+      {{-- @livewire('index.article',['article' => $article]); --}}
+       @livewire('index.article', ['article' => $best], key($best->id))
       @endforeach
 
-
     </div>
+
 
 
     <!-- -------------------- new article ------------------------- -->
@@ -53,11 +58,13 @@
       </div>
 
 
-      <div class="row justify-content-center align-items-center">
+      <div class="row justify-content-center align-items-center" >
 
 
       @foreach ($new_article as $new)
-      <livewire:index.article :article = "$new">
+      {{-- <livewire:index.article :article = "$article"> --}}
+      {{-- @livewire('index.article',['article' => $article]); --}}
+       @livewire('index.article', ['article' => $new], key($new->id))
       @endforeach
 
     </div>
