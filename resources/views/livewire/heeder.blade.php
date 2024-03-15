@@ -9,14 +9,27 @@
           مقالات
           <span></span>
         </li>
+        @if (auth()->check())
+        <li class="mx-3 cursor_pointer_text_shadow font_1_1">
+            {{ auth()->user()->name }}
+            <span></span>
+          </li>
+          <li class="mx-3 cursor_pointer_text_shadow font_1_1">
+            <a href="/logout"> خارج شدن از حساب</a>
+             <span></span>
+           </li>
+        @else
+        <li class="mx-3 cursor_pointer_text_shadow font_1_1">
+            <a href="/register"> ثبت نام</a>
+             <span></span>
+           </li>
         <li class="mx-3 cursor_pointer_text_shadow font_1_1">
          <a href="/login"> ورود</a>
           <span></span>
         </li>
-        <li class="mx-3 cursor_pointer_text_shadow font_1_1">
-            درباره ما
-            <span></span>
-          </li>
+
+        @endif
+
         <li class="d-block d-md-none mx-4">
           <a href="/" class="fas fa-search fa-2x cursor_pointer_text_shadow "></a>
         </li>
